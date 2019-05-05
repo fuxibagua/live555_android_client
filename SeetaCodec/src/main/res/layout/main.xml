@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStartClick"
+            android:text="start"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStopClick"
+            android:text="stop"/>
+
+        <ImageView android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2">
+        <TextureView
+            android:id="@+id/surfaceview1"
+            android:layout_width="640px"
+            android:layout_height="480px"
+            android:layout_margin="0.5dp"
+            android:onClick="onCaptureClick"/>
+        <TextureView
+            android:id="@+id/surfaceview2"
+            android:layout_width="640px"
+            android:layout_height="480px"
+            android:layout_margin="0.5dp"
+            android:onClick="onCaptureClick"
+            />
+        <TextureView
+            android:id="@+id/surfaceview3"
+            android:layout_width="640px"
+            android:layout_height="480px"
+            android:layout_margin="0.5dp"
+            android:onClick="onCaptureClick"
+            />
+        <TextureView
+            android:id="@+id/surfaceview4"
+            android:layout_width="640px"
+            android:layout_height="480px"
+            android:layout_margin="0.5dp"
+            android:onClick="onCaptureClick"
+            />
+    </GridLayout>
+
+
+</LinearLayout>
